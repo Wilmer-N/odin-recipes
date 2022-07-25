@@ -63,6 +63,8 @@ main{
     background-color: darkgray;
     margin: 1em;
     text-align: center;
+    padding: 1em;
+    box-sizing: border-box;
 }
 
 @media (max-width: 59.375rem){
@@ -76,8 +78,21 @@ main{
         width: 90%;
         height: 20em;
     }
+    .drink.pina-colada{
+        height: 20em;
+        
+      }
 
 }
+
+.drink.pina-colada{
+        background-image: url(../img/Pina_colada.jpeg); /* The image used */
+        background-color: #cccccc; /* Used if the image is unavailable */
+        height: 30vh; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+      }
 
 
 
