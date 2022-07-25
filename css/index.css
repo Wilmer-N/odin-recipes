@@ -74,19 +74,16 @@ main{
 
 }
 @media (max-width: 40.625rem){
-    .drink{
+    #drinks .drink{
         width: 90%;
         height: 20em;
     }
-    .drink.pina-colada{
-        height: 20em;
-        
-      }
+   
 
 }
 
 .drink.pina-colada{
-        background-image: url(../img/Pina_colada.jpeg); /* The image used */
+        background-image: url(../img/pina-colada3.jpeg); /* The image used */
         background-color: #cccccc; /* Used if the image is unavailable */
         height: 30vh; /* You must set a specified height */
         background-position: center; /* Center the image */
