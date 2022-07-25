@@ -62,28 +62,31 @@ main{
     height: calc(100%);
     flex-direction: row;
     flex-wrap: wrap;
-    
-    
 }
 
 .drink{
     width: 30%;
-    height: 30vh;
-    background-color: darkgray;
+    height: 30vh; /* You must set a specified height */
     margin: 1em;
     text-align: center;
     padding: 1em;
     box-sizing: border-box;
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-radius: 0.5em;
+    
 }
 #contact{
     width: 100%;
     height: 100vh;
     text-align: center;
-    background-color: blue;
 }
 #contact h1{
     font-size: 4em;
     padding-top: 5rem;
+    
 }
 #contact_flex{
     display: flex;
@@ -108,23 +111,22 @@ main{
     }
    
 }
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
 
 .drink.pina-colada{
         background-image: url(../img/pina-colada3.jpeg); /* The image used */
-        background-color: #cccccc; /* Used if the image is unavailable */
-        height: 30vh; /* You must set a specified height */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover; /* Resize the background image to cover the entire container */
-      }
+}
+
 .drink.sloe{
     background-image: url(../img/sloe2.jpeg); /* The image used */
-        background-color: #cccccc; /* Used if the image is unavailable */
-        height: 30vh; /* You must set a specified height */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover; /* Resize the background image to cover the entire container */
 
+}
+.drink.sour{
+    background-image: url(../img/sour2.jpeg); /* The image used */
 }
 
 
