@@ -6,7 +6,6 @@ body{
 }
 li{
     list-style: none;
-    font-size: 2rem;
 }
 nav > ul > li{
     display: inline-block;
@@ -14,11 +13,19 @@ nav > ul > li{
 }
 nav > ul > li > a{
     color: ghostwhite;
+    font-size: 2rem;
 }
 a{
     text-decoration: none;
-    color: black;
 }
+.drink a{
+    color: white;
+    font-size: 2em;
+}
+.drink a:hover{
+    color: rgb(0, 0, 0)
+}
+
 
 header{
     width: 100%;
@@ -55,6 +62,7 @@ main{
     height: calc(100%);
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
 
 .drink{
@@ -79,7 +87,6 @@ main{
         height: 20em;
     }
    
-
 }
 
 .drink.pina-colada{
