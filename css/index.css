@@ -1,20 +1,23 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: ghostwhite;
+    background-color: white;
     font-size: 16px;
 }
+
 li{
     list-style: none;
 }
 nav > ul > li{
     display: inline-block;
+    height: 100%;
     
 }
 nav > ul > li > a{
     color: ghostwhite;
     font-size: 2rem;
 }
+
 a{
     text-decoration: none;
 }
@@ -37,6 +40,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding-left: 1em;
+    align-items: center;
    
 }
 nav{
@@ -44,6 +48,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /*This is the right side of the top of the screen*/
 }
 nav > ul{
     width: 100%;
@@ -54,7 +59,7 @@ main{
     margin-top: 6rem;
 }
 
-
+/*This is the container for all of the drinks*/
 #drinks{
     justify-content: space-evenly;
     display: flex;
@@ -98,6 +103,8 @@ main{
     background-color: white;
 }
 
+/* media queries*/
+
 @media (max-width: 59.375rem){
     .drink{
         width: 45%;
@@ -109,6 +116,11 @@ main{
         width: 90%;
         height: 20em;
     }
+    nav > ul > li > a{
+        color: ghostwhite;
+        font-size: 1rem;
+    }
+    
    
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -117,17 +129,41 @@ main{
     }
   }
 
+
+/* Below this is the img background for the .drink */
+
 .drink.pina-colada{
         background-image: url(../img/pina-colada3.jpeg); /* The image used */
 }
 
 .drink.sloe{
     background-image: url(../img/sloe2.jpeg); /* The image used */
+  
+}
+.drink.a_sour{
+    background-image: url(../img/sour2.jpeg); /* The image used */ 
+}
+.drink.maria{
+    background-image: url(../img/maria.jpeg); /* The image used */
 
 }
-.drink.sour{
-    background-image: url(../img/sour2.jpeg); /* The image used */
+.drink.n_sour{
+    background-image: url(../img/n_sour.webp); /* The image used */
 }
+.drink.w_gold{
+    background-image: url(../img/w_gold.jpeg); /* The image used */
+}
+.drink.i_buck{
+    background-image: url(../img/i_buck.jpeg); /* The image used */
+}
+.drink.c_moj{
+    background-image: url(../img/c_moj.jpeg); /* The image used */
+}
+.drink.w_moj{
+    background-image: url(../img/w_moj.jpeg); /* The image used */
+}
+
+/* Above this is the img background for the .drink */
 
 
 
