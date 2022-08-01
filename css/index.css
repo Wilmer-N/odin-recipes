@@ -63,10 +63,10 @@ main{
 #drinks{
     justify-content: space-evenly;
     display: flex;
-    width: 100%;
     height: calc(100%);
     flex-direction: row;
     flex-wrap: wrap;
+   
 }
 
 .drink{
@@ -74,15 +74,30 @@ main{
     height: 30vh; /* You must set a specified height */
     margin: 1em;
     text-align: center;
-    padding: 1em;
+    padding-top: 1em;
     box-sizing: border-box;
     background-color: #cccccc; /* Used if the image is unavailable */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px 0 #888;
     
 }
+.drink .content{
+    flex: auto;
+}
+.card_footer{
+    width: 100%;
+    height: 3em;
+    background-color: white;
+    flex-basis: auto;
+    margin: 0 auto;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
 #contact{
     width: 100%;
     height: 100vh;
@@ -105,7 +120,8 @@ main{
 
 /* media queries*/
 
-@media (max-width: 59.375rem){
+
+@media (max-width: 60rem){
     .drink{
         width: 45%;
     }
@@ -141,7 +157,7 @@ main{
   
 }
 .drink.a_sour{
-    background-image: url(../img/sour2.jpeg); /* The image used */ 
+    background-image: url(../img/sour2.jpeg); /* The image used */
 }
 .drink.maria{
     background-image: url(../img/maria.jpeg); /* The image used */
