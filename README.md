@@ -1,2 +1,2 @@
 # odin-recipes
-I will create some kind of recipe for the odin project, I dont know if this will be of any value to me since I already have some HTML knowledge. I do know that this will help my git knowledge however. They wanted me to write this :)
+I will create a recipe for the odin project, I hopethat this will help my git knowledge however. They wanted me to write this :)
